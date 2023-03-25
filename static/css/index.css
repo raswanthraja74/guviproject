@@ -1,0 +1,56 @@
+
+		/* Center the content vertically */
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		/* Add animation to the title */
+
+        body{background-color: beige;
+
+        }
+		.title {
+			animation: slideInDown 1s ease-in-out;
+			margin-bottom: 2rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 60px;
+            color: green;
+		}
+        .title2 {
+			animation: slideInDown 1s ease-in-out;
+			margin-bottom: 2rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 40px;
+            color: green;
+		}
+       
+		/* Add animation to the buttons */
+		.buttons {
+			animation: fadeInUp 1s ease-in-out;
+		}
+		
+		/* Keyframes for the animations */
+		@keyframes slideInDown {
+			0% {
+				transform: translateY(-100%);
+				opacity: 0;
+			}
+			100% {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+		@keyframes fadeInUp {
+			0% {
+				transform: translateY(50%);
+				opacity: 0;
+			}
+			100% {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
